@@ -1,0 +1,105 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<div class="container">
+    <header class="header">
+        <h1 id="title" class="text-center">Survey Form
+        </h1>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional):</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="13"
+            max="80"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        
+    
+        <div class="form-group">
+          <p>Select your gender:</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Male</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Female</label
+          >
+    
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Other</label
+          >
+        </div>
+
+        <div class="form-group">
+            <p>Which option best describes your current status?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              <option value="student">Single</option>
+              <option value="job">Married</option>
+              <option value="learner">Divorced</option>
+              <option value="preferNo">Widowed</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+    
+        <div class="form-group">
+          <button type="submit" id="submit" class="btn btn-primary">
+            Submit
+          </button>
+        </div>
+      </form>
+</div>
